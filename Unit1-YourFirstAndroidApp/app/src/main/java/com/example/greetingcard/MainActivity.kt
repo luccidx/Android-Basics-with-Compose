@@ -41,14 +41,14 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Surface(color = Color.Green) {
         Text(
             text = "Hi, my name is $name ! 😃",
-            modifier = modifier.padding(48.dp)
+            modifier = modifier.padding(top = 200.dp, start = 50.dp)
         )
     }
 }
 
 
 //Preview Compose Function
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
     GreetingCardTheme {
